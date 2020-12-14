@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ajax Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    .container {
+      /* display: flex;
+      /* justify-content: center; */
+      /* text-align: center; */
+    }
+
+    #ajaxDog {
+      width: 300px;
+      height: 300px;
+      border: 3px black solid;
+      text-align: center;
+      /* align-items: center; */
+    }
+
+    img {
+      max-width: 300px;
+      max-height: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>AJAX Example</h1>
+    <div id="ajaxDog">
+
+    </div>
+    </br>
+    <label for="dropdown">Choose a Breed:</label>
+    <select id="dropdown">
+
+    </select>
+    </br>
+    </br>
+    <button id="button"><span id="status">Generate</span> Doggo</button>
+  </div>
+  <script>
+    window.addEventListener("load", generateList);
+    
+    let dropwdown = document.getElementById('dropdown');
+    let button = document.getElementById("button");
+    let buttonText = document.getElementById("status");
+    let ajaxDog = document.getElementById("ajaxDog");
+    let breedName = '';
+
+    dropdown.addEventListener("change", function (){
+      breedName = this.value;
+      console.log(breedName);
+    });
+
+    button.addEventListener("click", generateDog2);
+
+    function generateList() {
+      axios
+        .get('https://dog.ceo/api/breeds/list')
+        .then(function (response) {
+          // console.log(response);
+          let breedList = response.data.message;
+          function iterate(item, index) {
+            // console.log(`breed = ${item}`);
+            dropdown.innerHTML += `<option value = "${item}"> ${item} </option>`
+          };
+          breedList.forEach(iterate);
+        });
+    };
+
+    function generateDog2() {  
+      buttonText.innerHTML = "Generating";
+      axios
+        .get(`https://dog.ceo/api/breed/${breedName}/images/random`)
+        .then(function (response) {
+          // const image = document.createElement('img');
+          // image.src = response.data.message;
+          ajaxDog.innerHTML = `<img src="${response.data.message}" />`;
+          buttonText.innerHTML = "Generate";
+        });
+    }
+   
+  </script>
+</body>
+
+</html>
