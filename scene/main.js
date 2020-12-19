@@ -10,7 +10,7 @@ $('#searchButton').click(function (event) {
 
   const $movieResults = $('#movie-results');
 
-  $.get(`http://www.omdbapi.com/?apikey=9c815c55&s=${$searchString}`).done(function(response){
+  $.get(`https://www.omdbapi.com/?apikey=9c815c55&s=${$searchString}`).done(function(response){
   console.log(response)  ;
   // response.Search.forEach(function(movie){
   //     // console.log(movie);
