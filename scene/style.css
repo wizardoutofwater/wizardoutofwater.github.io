@@ -1,0 +1,56 @@
+/* 292f36,4ecdc4,f7fff7,ff6b6b,ffe66d */
+
+/* Object */
+/* {"Gunmetal":"292f36","Medium Turquoise":"4ecdc4","Mint Cream":"f7fff7","Bittersweet":"ff6b6b","Naples Yellow":"ffe66d"} */
+
+body{
+    background-color: #292f36 ;
+}
+.movies-results{
+    background-color:#292f36;
+}
+ 
+.container{
+    /* background-color:#ffe66d ; */
+    padding-top: 20px;
+    border-radius: 1rem;
+}
+
+.card{
+    border: 3px solid #4ecdc4;
+    border-radius: 1rem;
+    background-color: #292f36;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* max-height: 466px; */
+}
+.card:hover{
+    border: 3px solid #ffe66d;
+}
+.card-body{
+    color: #f7fff7;
+}
+.card-img-top {
+    box-sizing:border-box;
+    border: 20px solid #292f36;
+    border-radius: 1rem;
+   
+}
+.btn {
+    color: #f7fff7;
+    border-color:#4ecdc4;
+}
+.btn-outline-secondary:hover {
+    color: #f7fff7;
+    background-color: #4ecdc4;
+    border-color: #292f36;
+}
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+#navbar {
+    color:#292f36;
+    background-color: #292f36;
+    border-radius: 1 rem;
+}
+#search{
+    background-color:#ff6b6b;
+}
