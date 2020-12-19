@@ -12,7 +12,7 @@ body{
  
 .container{
     /* background-color:#ffe66d ; */
-    padding-top: 20px;
+    /* padding-top: 20px; */
     border-radius: 1rem;
 }
 
@@ -51,6 +51,10 @@ body{
     background-color: #292f36;
     border-radius: 1 rem;
 }
-#search{
-    background-color:#ff6b6b;
+.navbar-brand {
+    color:#ffe66d;
+}
+#searchButton:hover{
+    color:#ffe66d;
+    /* background-color:#ff6b6b; */
 }
