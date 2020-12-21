@@ -1,7 +1,7 @@
 /* 292f36,4ecdc4,f7fff7,ff6b6b,ffe66d */
 
 /* Object */
-/* {"Gunmetal":"292f36","Medium Turquoise":"4ecdc4","Mint Cream":"f7fff7","Bittersweet":"ff6b6b","Naples Yellow":"ffe66d"} */
+/* {"Gunmetal":"292f36","Medium Turquoise":"4ecdc4","Mint Cream":"f7fff7","Bittersweet":"ff6b6b","Naples Yellow":"ffe66d" "paradise pink": "EF476F"} */
 
 body{
     background-color: #292f36 ;
@@ -19,8 +19,13 @@ body{
     color: #f7fff7;
 }
 #jumboDivider {
-   background-color: #ff6b6b;
+   background-color: #ef476f;
    
+}
+
+p {
+    color:#f7fff7;
+
 }
 
 .redTxt{
@@ -79,6 +84,9 @@ body{
 }
 .navbar-brand {
     color:#ffe66d;
+}
+#search-bar{
+    background-color: #f7fff7;
 }
 #searchButton {
     color: #f7fff7;
