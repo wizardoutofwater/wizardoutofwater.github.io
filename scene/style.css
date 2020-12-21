@@ -74,6 +74,7 @@ body{
     /* background-color: #292f36; */
     background: rgba(41, 84, 115, 0.024);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-radius: 1 rem;
 }
 .navbar-brand {
