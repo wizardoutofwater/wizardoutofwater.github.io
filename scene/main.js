@@ -9,6 +9,7 @@ $('#searchButton').click(function (event) {
   console.log($searchString)
 
   const $movieResults = $('#movie-results');
+  const $jumboTron = $('.jumbotron');
 
   $.get(`https://www.omdbapi.com/?apikey=9c815c55&s=${$searchString}`).done(function(response){
   console.log(response)  ;
@@ -20,6 +21,7 @@ $('#searchButton').click(function (event) {
   });
 
   const renderMovies = (movieArray) => {
+   $jumboTron.css("display","none")
     $movieResults.html('');
     movieArray.map((movie) => {
       $movieResults.append(
