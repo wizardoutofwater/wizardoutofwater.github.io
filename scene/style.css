@@ -85,7 +85,13 @@ p {
 .navbar-brand {
     color:#ffe66d;
 }
+
+/* input { */
+    /* color:#ff6b6b; */
+}
+
 #search-bar{
+    /* color:#ef476f; */
     background-color: #f7fff7;
 }
 #searchButton {
